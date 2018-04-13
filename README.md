@@ -1,8 +1,4 @@
----
-output: md_document
----
-
-taxa
+taxadc
 ====
 
 
