@@ -26,3 +26,9 @@ csep2vec <- function(z, uniq = TRUE) {
 }
 
 strex <- function(str, pattern) regmatches(str, regexpr(pattern, str))
+
+toggle_ns <- function(x) {
+  if (x %in% dc_terms) return("dc:")
+  if (x %in% dwc_terms) return("dwc:")
+  stop("term not found in 'dc' or 'dwc' namespaces")
+}

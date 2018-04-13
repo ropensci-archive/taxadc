@@ -2,16 +2,13 @@ Package: taxadc
 Type: Package
 Title: Serializing Darwin Core Data
 Description: Darwin Core Data.
-Version: 0.0.1.9100
+Version: 0.0.1.9110
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"), 
        email = "myrmecocystus+r@gmail.com", comment = c(ORCID = "0000-0003-1444-9135"))
     )
 Depends:
     R (>= 3.0.2)
-VignetteBuilder: knitr
-LazyLoad: yes
-LazyData: yes
 License: MIT + file LICENSE
 URL: https://github.com/ropenscilabs/taxadc
 BugReports: https://github.com/ropenscilabs/taxadc/issues
@@ -20,7 +17,6 @@ Imports:
     taxa,
     xml2
 Suggests:
-    roxygen2 (>= 6.0.1),
     testthat
 RoxygenNote: 6.0.1
 X-schema.org-applicationCategory: Taxonomy

@@ -34,11 +34,12 @@ out <- darwin_simple(type = "PhysicalObject",
   modified = "2009-02-12", language = "en", 
   basisOfRecord = "PreservedSpecimen", taxonID = "12345", 
   scientificName = "Poa annua")
-xml_structure(out)
+xml <- darwin_as_xml(out)
+xml_structure(xml)
 ```
 
 ```{r}
-write_xml(out, (f <- tempfile(fileext=".xml")))
+write_xml(xml, (f <- tempfile(fileext=".xml")))
 readLines(f, n = 2)
 ```
 

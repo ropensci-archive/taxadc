@@ -30,7 +30,8 @@ out <- darwin_simple(type = "PhysicalObject",
   modified = "2009-02-12", language = "en", 
   basisOfRecord = "PreservedSpecimen", taxonID = "12345", 
   scientificName = "Poa annua")
-xml_structure(out)
+xml <- darwin_as_xml(out)
+xml_structure(xml)
 #> <SimpleDarwinRecordSet [schemaLocation, xmlns, xmlns:dc, xmlns:dwc, xmlns:xsi]>
 #>   <SimpleDarwinRecord>
 #>     <type>
@@ -49,7 +50,7 @@ xml_structure(out)
 
 
 ```r
-write_xml(out, (f <- tempfile(fileext=".xml")))
+write_xml(xml, (f <- tempfile(fileext=".xml")))
 readLines(f, n = 2)
 #> [1] "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"                                                                                                                                                                                                                                                                                 
 #> [2] "<SimpleDarwinRecordSet xmlns=\"http://rs.tdwg.org/dwc/xsd/simpledarwincore/\" xmlns:dc=\"http://purl.org/dc/terms/\" xmlns:dwc=\"http://rs.tdwg.org/dwc/terms/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://rs.tdwg.org/dwc/xsd/simpledarwincore/ ../../xsd/tdwg_dwc_simple.xsd\">"
