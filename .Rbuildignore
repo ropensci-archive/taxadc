@@ -1,0 +1,14 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.travis\.yml$
+^CONDUCT\.md$
+^README\.Rmd$
+^scratch$
+man-roxygen
+^notes$
+.github
+^README.html$
+cran-comments.md
+scott_notes.md
+^codemeta\.json$
+^CODE_OF_CONDUCT\.md$
