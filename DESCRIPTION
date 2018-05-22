@@ -15,7 +15,8 @@ BugReports: https://github.com/ropenscilabs/taxadc/issues
 Roxygen: list(markdown = TRUE)
 Imports:
     taxa,
-    xml2
+    xml2,
+    tibble
 Suggests:
     testthat
 RoxygenNote: 6.0.1
