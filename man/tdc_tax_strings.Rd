@@ -6,6 +6,9 @@
 \usage{
 tdc_tax_strings(x)
 }
+\arguments{
+\item{x}{input, a Taxonomy object for now only}
+}
 \description{
 get tax strings
 }
